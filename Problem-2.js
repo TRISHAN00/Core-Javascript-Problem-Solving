@@ -18,4 +18,4 @@ function linearSearch(arr, val) {
   return "not found!";
 }
 
-console.log(linearSearch(["a", "b", "c"], "c"));
+// console.log(linearSearch(["a", "b", "c"], "c"));

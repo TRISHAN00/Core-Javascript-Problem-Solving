@@ -28,23 +28,43 @@ const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
 function countValue(sentence) {
   let count = 0;
-  console.log("Count:", count);
+  // console.log("Count:", count);
 
   const letters = Array.from(sentence);
-  console.log("Letter:", letters);
+  // console.log("Letter:", letters);
 
   letters.forEach((value) => {
-    console.log("Value", value);
+    // console.log("Value", value);
 
     if (vowels.includes(value)) {
-      console.log("count if", count);
+      // console.log("count if", count);
 
       count++;
-      console.log("count after if", count);
-      console.log("-----------------------------------");
+      // console.log("count after if", count);
+      // console.log("-----------------------------------");
     }
   });
   return count;
 }
 
 countValue("I love bangladesh");
+
+// find duplicate numbers or name from array.
+const arrNumber = [
+  "Trishan",
+  "Rishan",
+  "Trishan",
+  6,
+  5,
+  1,
+  2,
+  3,
+  1,
+  7,
+  9,
+  9,
+  10,
+];
+const duplicate = arrNumber.filter((value, index, array) => {
+  return array.indexOf(value) !== index;
+});

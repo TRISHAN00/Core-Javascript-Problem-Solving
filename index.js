@@ -1,9 +1,9 @@
-// random number
+//1. random number
 function randomNumber(n) {
   return Math.floor(Math.random() * n + 1);
 }
 
-// sorting names
+//2. sorting names
 const names = [
   "Zoe Wang",
   "Darius Mclean",
@@ -16,14 +16,14 @@ function sortingName(arr) {
   return arr.sort();
 }
 
-// sorting number
+//3. sorting number
 const numbers = [5, 4, 8, 6, 1, 2, 3, 7, 9, 10];
 
 function sortingNumber(n) {
   return n.sort((a, b) => a - b);
 }
 
-// find vowels from any sentence.
+//4. find vowels from any sentence.
 const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
 function countValue(sentence) {
@@ -49,7 +49,7 @@ function countValue(sentence) {
 
 countValue("I love bangladesh");
 
-// find duplicate numbers or name from array.
+//5. find duplicate numbers or name from array.
 const arrNumber = [
   "Trishan",
   "Rishan",

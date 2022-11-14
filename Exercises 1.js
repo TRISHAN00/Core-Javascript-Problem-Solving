@@ -15,3 +15,8 @@ function isSumEqual100(a, b) {
 function getFileExtension(str) {
   return str.slice(str.lastIndexOf("."));
 }
+
+// reverse string
+function reverseWord(str) {
+  return str.split("").reverse().join("");
+}

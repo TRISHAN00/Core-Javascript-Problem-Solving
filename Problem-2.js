@@ -46,15 +46,28 @@ longestWord(arr);
 function fizzBuzz(number) {
   for (let i = 1; i < number; i++) {
     if (i % 3 === 0) {
-      console.log(`${i} is Fizz Number`);
+      // console.log(`${i} is Fizz Number`);
     } else if (i % 5 === 0) {
-      console.log(`${i} is Buzz Number`);
+      // console.log(`${i} is Buzz Number`);
     } else if (i % 15 === 0) {
-      console.log(`${i} is FizzBuzz Number`);
+      // console.log(`${i} is FizzBuzz Number`);
     } else {
-      console.log(i);
+      // console.log(i);
     }
   }
 }
 
 fizzBuzz(10);
+
+// filter falsy value from the array
+const mixedArray = ["trs", null, undefined, "saha", 0, 2, NaN, 20, "apple"];
+
+const trueArray = mixedArray.filter((n) => {
+  if (n) {
+    return true;
+  } else {
+    return false;
+  }
+});
+
+console.log(trueArray);

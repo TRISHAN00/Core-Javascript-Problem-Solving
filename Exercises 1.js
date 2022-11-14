@@ -20,3 +20,13 @@ function getFileExtension(str) {
 function reverseWord(str) {
   return str.split("").reverse().join("");
 }
+
+// mm-dd-yyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+function formatData(date = new Date()) {
+  const days = date.getDate();
+  const months = date.getMonth();
+  const years = date.getFullYear();
+  return `${days}/${months}/${years}`;
+}
+
+formatData();

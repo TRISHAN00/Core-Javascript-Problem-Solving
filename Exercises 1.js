@@ -11,8 +11,7 @@ function isSumEqual100(a, b) {
   }
 }
 
-console.log(isSumEqual100(0, 100));
-console.log(isSumEqual100(100, 0));
-console.log(isSumEqual100(50, 50));
-console.log(isSumEqual100(40, 60));
-console.log(isSumEqual100(0, 10));
+// extension of a file name
+function getFileExtension(str) {
+  return str.slice(str.lastIndexOf("."));
+}

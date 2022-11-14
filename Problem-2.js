@@ -70,4 +70,25 @@ const trueArray = mixedArray.filter((n) => {
   }
 });
 
-console.log(trueArray);
+// find truthy value from object
+const obj = {
+  a: "Trishan",
+  b: "Thanks to all",
+  c: 50,
+  d: null,
+  e: undefined,
+  f: 44,
+  g: 0,
+  h: NaN,
+  i: "",
+};
+
+function findTruthyObj(obj) {
+  for (let i in obj) {
+    if (!obj[i]) {
+      delete obj[i];
+    }
+  }
+  return obj;
+}
+findTruthyObj(obj)

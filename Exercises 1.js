@@ -34,5 +34,9 @@ const findNew = (str) => {
 
 // add first 3 character with last character of string
 
-const addFirstLastThreeCharacter = (str) => {};
-console.log(addFirstLastThreeCharacter("I love Bangladesh"));
+const addFirstLastThreeCharacter = (str) => {
+  let first = str.substring(0, 3);
+  let last = str.slice(-3);
+  return first + last;
+};
+console.log(addFirstLastThreeCharacter("Adi is a Desh tya"));

@@ -1,32 +1,38 @@
-// Write a javascript program to check two numbers and return true if one of number is 100 or if the sum of the two numbers is 100
+// Write a javascript code to check two numbers and return true if one the number is 100 or equal
 
-function isSumEqual100(a, b) {
+const isEqual100 = (a, b) => {
   if (a + b === 100) {
     return true;
-  }
-  if (a || b === 100) {
+  } else if (a - b === 100) {
+    return true;
+  } else if ((a, b === 100)) {
     return true;
   } else {
-    return false;
+    return 0;
   }
-}
+};
 
-// extension of a file name
-function getFileExtension(str) {
+// extension of file
+
+const fileExtension = (str) => {
   return str.slice(str.lastIndexOf("."));
-}
+};
 
-// reverse string
-function reverseWord(str) {
+// reverse alphabet
+const reverseStr = (str) => {
   return str.split("").reverse().join("");
-}
+};
 
-// mm-dd-yyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
-function formatData(date = new Date()) {
-  const days = date.getDate();
-  const months = date.getMonth();
-  const years = date.getFullYear();
-  return `${days}/${months}/${years}`;
-}
+// find New! in string
 
-formatData();
+const findNew = (str) => {
+  let r = str.split(" ").filter((w) => {
+    return w === "New!" ? true : false;
+  });
+  return r.join();
+};
+
+// add first 3 character with last character of string
+
+const addFirstLastThreeCharacter = (str) => {};
+console.log(addFirstLastThreeCharacter("I love Bangladesh"));

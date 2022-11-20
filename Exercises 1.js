@@ -49,3 +49,8 @@ function halfString(str) {
 function exceptFirstLetter(str1, str2) {
   return str1.slice(1) + str2.slice(1);
 }
+
+// find a value which is nearest of 100
+function closestTo100(a, b) {
+  return a - 100 > b - 100 ? a : b;
+}

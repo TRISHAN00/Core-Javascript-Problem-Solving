@@ -44,3 +44,8 @@ const addFirstLastThreeCharacter = (str) => {
 function halfString(str) {
   return str.slice(0, str.length / 2);
 }
+
+// concatenate two strings except their first character
+function exceptFirstLetter(str1, str2) {
+  return str1.slice(1) + str2.slice(1);
+}

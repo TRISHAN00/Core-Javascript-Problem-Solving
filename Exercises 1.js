@@ -39,4 +39,8 @@ const addFirstLastThreeCharacter = (str) => {
   let last = str.slice(-3);
   return first + last;
 };
-console.log(addFirstLastThreeCharacter("Adi is a Desh tya"));
+
+// cut half of string
+function halfString(str) {
+  return str.slice(0, str.length / 2);
+}
